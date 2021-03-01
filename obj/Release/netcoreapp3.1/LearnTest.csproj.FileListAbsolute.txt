@@ -1,0 +1,15 @@
+C:\raman\Selenium\LearnTest\LearnTest\bin\Release\netcoreapp3.1\LearnTest.exe
+C:\raman\Selenium\LearnTest\LearnTest\bin\Release\netcoreapp3.1\LearnTest.deps.json
+C:\raman\Selenium\LearnTest\LearnTest\bin\Release\netcoreapp3.1\LearnTest.runtimeconfig.json
+C:\raman\Selenium\LearnTest\LearnTest\bin\Release\netcoreapp3.1\LearnTest.runtimeconfig.dev.json
+C:\raman\Selenium\LearnTest\LearnTest\bin\Release\netcoreapp3.1\LearnTest.dll
+C:\raman\Selenium\LearnTest\LearnTest\bin\Release\netcoreapp3.1\LearnTest.pdb
+C:\raman\Selenium\LearnTest\LearnTest\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+C:\raman\Selenium\LearnTest\LearnTest\bin\Release\netcoreapp3.1\WebDriver.dll
+C:\raman\Selenium\LearnTest\LearnTest\obj\Release\netcoreapp3.1\LearnTest.AssemblyInfoInputs.cache
+C:\raman\Selenium\LearnTest\LearnTest\obj\Release\netcoreapp3.1\LearnTest.AssemblyInfo.cs
+C:\raman\Selenium\LearnTest\LearnTest\obj\Release\netcoreapp3.1\LearnTest.csproj.CoreCompileInputs.cache
+C:\raman\Selenium\LearnTest\LearnTest\obj\Release\netcoreapp3.1\LearnTest.csproj.CopyComplete
+C:\raman\Selenium\LearnTest\LearnTest\obj\Release\netcoreapp3.1\LearnTest.dll
+C:\raman\Selenium\LearnTest\LearnTest\obj\Release\netcoreapp3.1\LearnTest.pdb
+C:\raman\Selenium\LearnTest\LearnTest\obj\Release\netcoreapp3.1\LearnTest.genruntimeconfig.cache
