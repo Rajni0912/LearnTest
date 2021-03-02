@@ -8,6 +8,42 @@ namespace LearnTest.Pages
 {
     class TnMPage
     {
+          // Functionality to go to last page
+        public void goToLastpage(IWebDriver driver)
+        {
+            /********************paginaation.....
+            * 
+
+           ******************************/
+            driver.Navigate().GoToUrl("http://horse.industryconnect.io/TimeMaterial");
+            driver.Manage().Window.Maximize();
+
+            //    IWebElement pageLinks = driver.FindElement(By.XPath("//div[contains(@class,'k-pager-wrap')]//a[contains(@class, 'k-pager-last')]"));
+
+
+            IWebElement findlastPage = driver.FindElement(By.CssSelector(".k-i-seek-e"));
+            Console.WriteLine("Click pagination links....");
+
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            Actions actions1 = new Actions(driver);
+
+            actions1.MoveToElement(findlastPage).Perform();
+            findlastPage.Click();
+            Console.WriteLine("Last Page found");
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
         public void CreateTnM(IWebDriver driver)
         {
             driver.Navigate().GoToUrl("http://horse.industryconnect.io/TimeMaterial/Create");
@@ -58,8 +94,8 @@ namespace LearnTest.Pages
              saveButton.Click();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(15);
 
-            GotoLastpage lastpageobj = new GotoLastpage();
-            lastpageobj.goToLastpage(driver);
+            
+            goToLastpage(driver);
 
 
 
@@ -134,7 +170,7 @@ namespace LearnTest.Pages
         {
             //Deleting the last record
 
-
+            goToLastpage(driver);
             IWebElement deleteButton = driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[last()]/td[last()]//a[contains(@class, 'k-grid-Delete')]"));
 
             driver.FindElement(By.XPath("//*[@id='tmsGrid']/div[3]/table/tbody/tr[last()]/td[last()]//a[contains(@class, 'k-grid-Edit')]"));

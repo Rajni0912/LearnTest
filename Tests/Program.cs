@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
@@ -8,31 +9,52 @@ using System.Collections.Generic;
 
 namespace LearnTest
 {
+    [TestFixture]
     class Program
     {
-        static void Main(string[] args)
+       /* static void Main(string[] args)
         {
 
             IWebDriver driver = new ChromeDriver(@"C:\raman\chromrdrv");
 
-            Pages.HomePage homePageObj = new Pages.HomePage();
+            
             Pages.LogInPage logInpageObj = new Pages.LogInPage();
             Pages.TnMPage tnmObj = new Pages.TnMPage();
 
 
-            logInpageObj.logInTM(driver);
+            //login test
+             void LogIn(IWebDriver driver)
+            {
+                Pages.HomePage homePageObj = new Pages.HomePage();
+                logInpageObj.logInTM(driver);
+            }
+       */
 
             // creating TnM
+         [Test]
+            void  CreateTnM(IWebDriver driver)
+            {
+                Pages.TnMPage tnmObj = new Pages.TnMPage();
+                tnmObj.CreateTnM(driver);
 
-
-            tnmObj.CreateTnM(driver);
+            }
 
             //editing TnM
+            [Test]
+            void EditTnM(IWebDriver driver)
+            {
+                Pages.TnMPage tnmObj = new Pages.TnMPage();
+                tnmObj.EditTnM(driver);
+            }
 
-            tnmObj.EditTnM(driver);
 
             //deleting TnM
-            tnmObj.DeleteTnM(driver);
+            [Test]
+            void DeleteTnM(IWebDriver driver)
+            {
+                Pages.TnMPage tnmObj = new Pages.TnMPage();
+                tnmObj.DeleteTnM(driver);
+            }
         }
 
 
@@ -61,4 +83,4 @@ namespace LearnTest
 
 
     }
-}
+//}
